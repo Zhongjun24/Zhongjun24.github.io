@@ -1,0 +1,42 @@
+---
+layout: default
+title: Zhongjun Zhang
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/files/CV.pdf">CV</a> |
+      <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
+      <a href="https://github.com/yourusername">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile photo">
+    </div>
+    <div class="content">
+      {% capture aboutme %}
+      {% include_relative about.md %}
+      {% endcapture %}
+      {{ aboutme | markdownify }}
+    </div>
+  </main>
+
+  <footer>
+    <p>© {{ site.title }} | {{ site.description }}</p>
+  </footer>
+</body>
+</html>
