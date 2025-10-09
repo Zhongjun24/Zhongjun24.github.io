@@ -1,0 +1,42 @@
+---
+title: Zhongjun Zhang – Publications
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ site.title | default: "Zhongjun Zhang" }}</title>
+  <link rel="stylesheet" href="assets/css/main.css?v=6" />
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1 class="name">Zhongjun Zhang</h1>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="other.html">Other</a>
+    </nav>
+  </header>
+
+  <hr class="divider" />
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <section class="publications">
+      {% capture pubs %}
+      {% include_relative publications.md %}
+      {% endcapture %}
+      {{ pubs | markdownify }}
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© {{ site.title | default: "Zhongjun Zhang" }}</p>
+  </footer>
+</body>
+</html>
