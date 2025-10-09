@@ -12,8 +12,7 @@ Please feel free to reach out if you share similar interests in learning and ope
 
 ## News
 
-- **October 2025:** Homepage launched 🎉  
-- **August 2025:** Our paper *"Reinforcement Learning in MDPs with Information-Ordered Policies"* was posted on arXiv.  
-- **July 2025:** Joined Northwestern University, Department of Industrial Engineering and Management Sciences (IEMS).  
-- **June 2024:** Completed M.S. in Industrial and Operations Engineering at the University of Michigan.  
-- **May 2020:** Joined Alibaba Cloud as Data Scientist, focusing on learning and optimization in supply chain systems.
+## News
+
+- **June 2024:** Our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" was selected as a **2025 INFORMS Nicholson Finalist**!  
+- **August 2020:** New preprint of our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" is now available on arXiv. [arXiv](https://arxiv.org/abs/2508.03904).
