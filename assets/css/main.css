@@ -40,34 +40,41 @@ header .name {
   text-decoration: underline;
 }
 
+/* ====== Horizontal Divider ====== */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
 /* ====== Intro Section ====== */
 .intro-section {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 25px;
   margin-bottom: 40px;
-  flex-wrap: wrap; /* for responsive layout */
+  flex-wrap: nowrap;
 }
 
 .photo {
-  flex: 0 0 180px;
+  flex: 0 0 120px;  /* smaller fixed width */
   text-align: center;
 }
 
 .profile-pic {
-  width: 180px;
+  width: 120px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .description {
-  flex: 1 1 500px;
-  min-width: 280px;
+  flex: 1;
+  min-width: 0;
 }
 
-/* Markdown-rendered content (about.md) */
+/* Markdown-rendered content */
 .description h2,
 .description h3 {
   margin-top: 1.2em;
@@ -125,6 +132,10 @@ footer {
 
   .photo {
     margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 150px;
   }
 
   .description {
