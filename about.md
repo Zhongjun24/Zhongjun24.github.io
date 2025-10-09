@@ -15,4 +15,4 @@ Please feel free to reach out if you share similar interests in learning and ope
 ## News
 
 - **June 2024:** Our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" was selected as a **2025 INFORMS Nicholson Finalist**!  
-- **August 2020:** New preprint of our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" is now available on arXiv. [arXiv](https://arxiv.org/abs/2508.03904).
+- **August 2020:** New preprint of our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" is now available on arXiv. [[arXiv](https://arxiv.org/abs/2508.03904)]
