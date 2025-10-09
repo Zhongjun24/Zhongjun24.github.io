@@ -5,48 +5,55 @@ title: Zhongjun Zhang
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ site.title | default: "Zhongjun Zhang" }}</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- 防缓存：每次改 CSS 就把 v=4 改成 v=5/6... -->
+  <link rel="stylesheet" href="assets/css/main.css?v=4" />
 </head>
-
 <body>
-  <!-- ===== Header: Name + Navigation ===== -->
+  <!-- ===== Header: Name ===== -->
   <header>
     <h1 class="name">Zhongjun Zhang</h1>
-    <nav class="nav-bar">
-      <a href="index.html">Home</a> |
-      <a href="publications.html">Publications</a> |
-      <a href="other.html">Other</a>
-    </nav>
   </header>
 
-  <!-- ===== Main Content ===== -->
-  <main>
-    <div class="intro-section">
-      <div class="photo">
-        <img src="images/headshot.jpg" alt="Zhongjun Zhang" class="profile-pic">
-      </div>
+  <!-- 明显分隔线 -->
+  <hr class="divider" />
 
+  <!-- ===== Navigation ===== -->
+  <nav class="nav-bar">
+    <a href="index.html">Home</a> |
+    <a href="publications.html">Publications</a> |
+    <a href="other.html">Other</a>
+  </nav>
+
+  <!-- 明显分隔线 -->
+  <hr class="divider" />
+
+  <!-- ===== Main: Intro (Left photo + Right description) ===== -->
+  <main>
+    <section class="intro-section">
+      <div class="photo">
+        <img src="images/headshot.jpg" alt="Zhongjun Zhang" class="profile-pic" />
+      </div>
       <div class="description">
         {% capture aboutme %}
         {% include_relative about.md %}
         {% endcapture %}
         {{ aboutme | markdownify }}
       </div>
-    </div>
+    </section>
 
-    <!-- ===== News Section ===== -->
+    <!-- 明显分隔线（intro 与后续内容/News 之间） -->
+    <hr class="divider" />
+
+    <!-- 可选：如果你在 about.md 里包含了 ## News，这里就不必额外写内容 -->
     <section class="news">
       <h2>News</h2>
-      <div class="news-content">
-        <!-- 你在 about.md 里写 “## News” 部分，会自动出现在这里 -->
-      </div>
+      <div class="news-content"><!-- 内容写在 about.md --></div>
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer>
     <p>© {{ site.title | default: "Zhongjun Zhang" }}</p>
   </footer>
