@@ -8,10 +8,12 @@ title: Zhongjun Zhang – Publications
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ site.title | default: "Zhongjun Zhang" }}</title>
-  <link rel="stylesheet" href="assets/css/main.css?v=7" />
+  <link rel="stylesheet" href="assets/css/main.css?v=9" />
 </head>
 
 <body>
+  <!-- ===== 顶部灰线 ===== -->
+  <hr class="divider" />
 
   <!-- ===== Header: Name + Navigation ===== -->
   <header>
@@ -24,16 +26,13 @@ title: Zhongjun Zhang – Publications
     </nav>
   </header>
 
-  <!-- ===== 灰线 ===== -->
+  <!-- ===== 灰线（导航下方） ===== -->
   <hr class="divider" />
 
   <!-- ===== Main Content ===== -->
   <main>
     <section class="publications">
-      {% capture pubs %}
-{% include_relative publications.md %}
-{% endcapture %}
-      {{ pubs | markdownify }}
+      {% include_relative publications.md %}
     </section>
   </main>
 
