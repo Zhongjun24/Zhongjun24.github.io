@@ -1,6 +1,6 @@
 title: "Zhongjun Zhang"
 description: "Researcher in Reinforcement Learning and Operations Research"
-url: "zhongjun24.github.io"
+url: "https://zhongjun24.github.io"
 markdown: kramdown
 kramdown:
   input: GFM        # 支持 GitHub 风格 Markdown（可选但推荐）
