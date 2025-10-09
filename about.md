@@ -1,3 +1,7 @@
+---
+markdown: kramdown
+---
+
 Hello! I am a Ph.D. candidate in the Department of Industrial Engineering and Management Sciences (IEMS) at Northwestern University, advised by Prof. [Sean Sinclair]((https://seanrsinclair.github.io/)).  
 I received my B.S. in Statistics from the University of Science and Technology of China and my M.S. in Industrial and Operations Engineering from the University of Michigan.  
 Before joining Northwestern, I spent four years at Alibaba Cloud as a data scientist, working on learning and optimization methods for large-scale supply chain systems.
