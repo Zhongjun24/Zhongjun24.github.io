@@ -7,7 +7,7 @@ Please feel free to reach out if you share similar interests in learning and ope
 
 **Contact:** zhongjun [at] u.northwestern.edu
 
-[CV](files/cv_ZhongjunZhang_2024.pdf) \| [Google Scholar](https://scholar.google.com/citations?user=XgB9GVwAAAAJ&hl=en)
+[CV](files/cv_ZhongjunZhang_2024.pdf) \| [Google Scholar](https://scholar.google.com/citations?user=XgB9GVwAAAAJ&hl=en) \| [Github](https://github.com/Zhongjun24)
 
 
 ## News
