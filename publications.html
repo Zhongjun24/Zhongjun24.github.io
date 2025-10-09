@@ -16,7 +16,7 @@ title: Zhongjun Zhang – Publications
   <!-- ===== Header: Name + Navigation ===== -->
   <header>
     <h1 class="name">Zhongjun Zhang</h1>
-    <hr class="divider" />
+    <hr class="divider" /> <!-- ✅ 名字下的横线 -->
     <nav class="nav-bar">
       <a href="index.html">Home</a> |
       <a href="publications.html">Publications</a> |
@@ -24,17 +24,18 @@ title: Zhongjun Zhang – Publications
     </nav>
   </header>
 
-  <!-- 灰线 -->
+  <!-- 灰线（导航下方） -->
   <hr class="divider" />
 
   <!-- ===== Main Content ===== -->
   <main>
     <section class="publications">
-      <!-- ✅ 注意：Markdown 渲染只作用于 include 的内容 -->
+      {% raw %}
       {% capture pubs %}
       {% include_relative publications.md %}
       {% endcapture %}
       {{ pubs | markdownify }}
+      {% endraw %}
     </section>
   </main>
 
