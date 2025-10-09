@@ -120,3 +120,15 @@ footer {
   .photo { margin-bottom: 14px; }
   .profile-pic { width: 132px; }   /* 移动端稍大，便于识别 */
 }
+
+/* ===== Fix Markdown codeblock misrendering ===== */
+.description pre,
+.description code {
+  font-family: inherit;     /* 用普通字体 */
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  white-space: normal;      /* 不要保持等宽空格 */
+  padding: 0;
+  margin: 0;
+}
