@@ -46,41 +46,51 @@ hr.divider {
   text-decoration: underline;
 }
 
-/* ===== Intro: photo + description ===== */
+/* ===== Intro Section ===== */
 .intro-section {
-  /* 不再使用 flex，改为普通块级布局 */
-  display: block;
+  display: flex;
+  align-items: center;       /* ✅ 让左右内容垂直居中 */
+  justify-content: flex-start;
+  gap: 40px;                 /* 左右间距稍大，视觉更平衡 */
   margin-bottom: 40px;
+  flex-wrap: nowrap;
 }
 
-/* 头像：左上角 + 文字环绕 */
+/* 左侧头像容器 */
+.photo {
+  flex: 0 0 180px;           /* 左栏固定宽度 */
+  text-align: center;
+}
+
+/* 头像样式 */
 .profile-pic {
-  float: left;              /* 让图片浮动到左边 */
-  width: 115px;             /* 保持你觉得合适的大小 */
+  width: 160px;              /* ✅ 调大照片 */
   height: auto;
-  border-radius: 5px;
-  margin-right: 20px;       /* 图片与文字间距 */
-  margin-bottom: 10px;      /* 图片下方留白 */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-radius: 8px;        /* 稍圆角 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 描述内容 */
+/* 右侧文字内容 */
 .description {
-  overflow: hidden;         /* 清除浮动影响，避免 footer 跟上来 */
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
-/* Markdown-rendered content in about.md */
+/* Markdown 标题、链接样式（保持不变） */
 .description h2,
 .description h3 {
-  margin-top: 1.1em;
-  margin-bottom: 0.45em;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
 }
 
 .description a {
   color: #003366;
   text-decoration: none;
 }
-.description a:hover { text-decoration: underline; }
+.description a:hover {
+  text-decoration: underline;
+}
 
 /* ===== News ===== */
 .news {
