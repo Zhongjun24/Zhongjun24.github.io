@@ -10,8 +10,6 @@ Please feel free to reach out if you share similar interests in learning and ope
 [CV](files/cv_ZhongjunZhang_2024.pdf) \| [Google Scholar](https://scholar.google.com/citations?user=XgB9GVwAAAAJ&hl=en)
 
 
----
-
 ## News
 
 - **October 2025:** Homepage launched 🎉  
