@@ -5,3 +5,5 @@ markdown: kramdown
 kramdown:
   input: GFM        # 支持 GitHub 风格 Markdown（可选但推荐）
   parse_block_html: true
+
+theme: null
