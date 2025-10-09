@@ -1,6 +1,5 @@
 ## Working Papers
 
-1. Reinforcement Learning in MDPs with Information-Ordered Policies \
-   Zhongjun Zhang, Shipra Agrawal, Ilan Lobel, Sean Sinclair, and Christina Lee Yu.  
-   *Working paper*, 2025. [arXiv](https://arxiv.org/abs/2508.03904) \
+1. Reinforcement Learning in MDPs with Information-Ordered Policies [arXiv](https://arxiv.org/abs/2508.03904) \
+   Z. Zhang, S. Agrawal, I. Lobel, S. Sinclair and C. Lee Yu \
    **Finalist, 2025 INFORMS Nicholson Student Paper Competition**
