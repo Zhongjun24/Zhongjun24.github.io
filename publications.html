@@ -8,7 +8,7 @@ title: Zhongjun Zhang – Publications
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ site.title | default: "Zhongjun Zhang" }}</title>
-  <link rel="stylesheet" href="assets/css/main.css?v=6" />
+  <link rel="stylesheet" href="assets/css/main.css?v=7" />
 </head>
 
 <body>
@@ -16,7 +16,7 @@ title: Zhongjun Zhang – Publications
   <!-- ===== Header: Name + Navigation ===== -->
   <header>
     <h1 class="name">Zhongjun Zhang</h1>
-    <hr class="divider" /> <!-- ✅ 名字下的横线 -->
+    <hr class="divider" />
     <nav class="nav-bar">
       <a href="index.html">Home</a> |
       <a href="publications.html">Publications</a> |
@@ -24,22 +24,21 @@ title: Zhongjun Zhang – Publications
     </nav>
   </header>
 
-  <!-- 灰线（导航下方） -->
+  <!-- ===== 灰线 ===== -->
   <hr class="divider" />
 
   <!-- ===== Main Content ===== -->
   <main>
     <section class="publications">
-      {% raw %}
       {% capture pubs %}
-      {% include_relative publications.md %}
-      {% endcapture %}
+{% include_relative publications.md %}
+{% endcapture %}
       {{ pubs | markdownify }}
-      {% endraw %}
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
+  <!-- ===== 灰线 + 页脚 ===== -->
+  <hr class="divider" />
   <footer>
     <p>© {{ site.title | default: "Zhongjun Zhang" }}</p>
   </footer>
