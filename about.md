@@ -8,3 +8,14 @@ Please feel free to reach out if you share similar interests in learning and ope
 **Contact:** zhongjun [at] u.northwestern.edu
 
 [CV](files/cv_ZhongjunZhang_2024.pdf) \| [Google Scholar](https://scholar.google.com/citations?user=XgB9GVwAAAAJ&hl=en)
+
+
+---
+
+## News
+
+- **October 2025:** Homepage launched 🎉  
+- **August 2025:** Our paper *"Reinforcement Learning in MDPs with Information-Ordered Policies"* was posted on arXiv.  
+- **July 2025:** Joined Northwestern University, Department of Industrial Engineering and Management Sciences (IEMS).  
+- **June 2024:** Completed M.S. in Industrial and Operations Engineering at the University of Michigan.  
+- **May 2020:** Joined Alibaba Cloud as Data Scientist, focusing on learning and optimization in supply chain systems.
