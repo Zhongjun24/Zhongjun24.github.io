@@ -29,7 +29,10 @@ title: Zhongjun Zhang – Publications
   <!-- ===== Main Content ===== -->
   <main>
     <section class="publications">
-      {% include publications.md %}
+    {% capture pubs %}
+    {% include publications.md %}
+    {% endcapture %}
+    {{ pubs | markdownify }}
     </section>
   </main>
 
