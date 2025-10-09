@@ -1,32 +1,33 @@
 ---
-layout: default
 title: Zhongjun Zhang
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ site.title | default: page.title }}</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-
 <body>
   <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/files/CV.pdf">CV</a> |
-      <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
-      <a href="https://github.com/yourusername">GitHub</a>
-    </nav>
+    <div class="container">
+      <h1 class="site-title">{{ site.title | default: "Zhongjun Zhang" }}</h1>
+      <p class="site-description">{{ site.description | default: "Researcher in Reinforcement Learning and Operations Research" }}</p>
+    </div>
   </header>
 
-  <main>
-    <div class="profile">
-      <img src="images/profile.jpg" alt="Profile photo">
+  <main class="container">
+    <div class="sidebar">
+      <img src="images/headshot.jpg" alt="Headshot of Zhongjun Zhang" class="avatar" />
+      <ul class="links">
+        <li><a href="files/cv_ZhongjunZhang_2024.pdf" target="_blank" rel="noopener">CV</a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/Zhongjun24" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
     </div>
+
     <div class="content">
       {% capture aboutme %}
       {% include_relative about.md %}
@@ -36,7 +37,9 @@ title: Zhongjun Zhang
   </main>
 
   <footer>
-    <p>© {{ site.title }} | {{ site.description }}</p>
+    <div class="container">
+      <p>© {{ site.title | default: "Zhongjun Zhang" }} | {{ site.description | default: "Researcher in Reinforcement Learning and Operations Research" }}</p>
+    </div>
   </footer>
 </body>
 </html>
