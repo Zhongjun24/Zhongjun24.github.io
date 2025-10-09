@@ -58,7 +58,7 @@ hr {
 }
 
 .photo {
-  flex: 0 0 120px;  /* smaller fixed width */
+  flex: 0 0 50px;  /* smaller fixed width */
   text-align: center;
 }
 
