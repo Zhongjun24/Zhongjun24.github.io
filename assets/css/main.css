@@ -19,7 +19,8 @@ header {
 header .name {
   font-size: 32px;
   font-weight: 600;
-  margin: 0 0 6px 0;
+  margin-bottom: 8px;
+  font-family: "Computer Modern Serif", "Times New Roman", serif;
 }
 
 /* ===== Strong Divider ===== */
