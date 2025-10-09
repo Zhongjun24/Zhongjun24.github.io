@@ -49,24 +49,27 @@ hr.divider {
 /* ===== Intro Section ===== */
 .intro-section {
   display: flex;
-  align-items: center;       /* ✅ 让左右内容垂直居中 */
+  align-items: center;         /* ✅ 垂直方向居中对齐 */
   justify-content: flex-start;
-  gap: 40px;                 /* 左右间距稍大，视觉更平衡 */
+  gap: 40px;                   /* 左右间距 */
   margin-bottom: 40px;
   flex-wrap: nowrap;
+  min-height: 220px;           /* 保证整体高度充足 */
 }
 
 /* 左侧头像容器 */
 .photo {
-  flex: 0 0 180px;           /* 左栏固定宽度 */
-  text-align: center;
+  flex: 0 0 200px;             /* 左栏固定宽度 */
+  display: flex;
+  align-items: center;         /* ✅ 头像在左栏内也垂直居中 */
+  justify-content: center;     /* 水平居中 */
 }
 
 /* 头像样式 */
 .profile-pic {
-  width: 160px;              /* ✅ 调大照片 */
+  width: 160px;                /* ✅ 比之前更大一些 */
   height: auto;
-  border-radius: 8px;        /* 稍圆角 */
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,6 +91,7 @@ hr.divider {
   color: #003366;
   text-decoration: none;
 }
+
 .description a:hover {
   text-decoration: underline;
 }
