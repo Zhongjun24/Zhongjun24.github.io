@@ -49,51 +49,31 @@ hr.divider {
 /* ===== Intro Section ===== */
 .intro-section {
   display: flex;
-  align-items: center;         /* ✅ 垂直方向居中对齐 */
+  align-items: center;         /* ✅ 垂直方向居中 */
   justify-content: flex-start;
   gap: 40px;                   /* 左右间距 */
   margin-bottom: 40px;
   flex-wrap: nowrap;
-  min-height: 220px;           /* 保证整体高度充足 */
 }
 
-/* 左侧头像容器 */
 .photo {
   flex: 0 0 200px;             /* 左栏固定宽度 */
   display: flex;
-  align-items: center;         /* ✅ 头像在左栏内也垂直居中 */
-  justify-content: center;     /* 水平居中 */
+  align-items: center;         /* ✅ 让头像在左栏内部垂直居中 */
+  justify-content: center;
 }
 
-/* 头像样式 */
 .profile-pic {
-  width: 160px;                /* ✅ 比之前更大一些 */
+  width: 160px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 右侧文字内容 */
 .description {
   flex: 1;
   min-width: 0;
   text-align: left;
-}
-
-/* Markdown 标题、链接样式（保持不变） */
-.description h2,
-.description h3 {
-  margin-top: 1.2em;
-  margin-bottom: 0.4em;
-}
-
-.description a {
-  color: #003366;
-  text-decoration: none;
-}
-
-.description a:hover {
-  text-decoration: underline;
 }
 
 /* ===== News ===== */
