@@ -1,35 +1,39 @@
-header .name { color: #0070f3; }
-
-/* ====== Global layout ====== */
+/* ===== Global ===== */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #111;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0 20px;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* ====== Header ====== */
+/* ===== Header / Name ===== */
 header {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 36px;
 }
 
 header .name {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin: 0 0 6px 0;
 }
 
+/* ===== Strong Divider ===== */
+hr.divider {
+  border: none;
+  border-top: 2px solid #cfcfcf;  /* 明显一点 */
+  margin: 18px 0 22px 0;
+}
+
+/* ===== Navigation ===== */
 .nav-bar {
+  text-align: center;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 .nav-bar a {
@@ -42,67 +46,55 @@ header .name {
   text-decoration: underline;
 }
 
-/* ====== Horizontal Divider ====== */
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 30px 0;
-}
-
-/* ====== Intro Section ====== */
+/* ===== Intro: photo + description ===== */
 .intro-section {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 25px;
-  margin-bottom: 40px;
-  flex-wrap: nowrap;
+  gap: 24px;
+  margin: 22px 0 26px 0;
+  flex-wrap: nowrap;     /* 保持同一行 */
 }
 
 .photo {
-  flex: 0 0 50px;  /* smaller fixed width */
+  flex: 0 0 120px;       /* 左列固定宽度，略大于图片以留白 */
   text-align: center;
+  margin-top: 2px;
 }
 
 .profile-pic {
-  width: 45px;
+  width: 112px;          /* ✅ 合适的桌面端尺寸 */
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .description {
-  flex: 1;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
-/* Markdown-rendered content */
+/* Markdown-rendered content in about.md */
 .description h2,
 .description h3 {
-  margin-top: 1.2em;
-  margin-bottom: 0.4em;
+  margin-top: 1.1em;
+  margin-bottom: 0.45em;
 }
 
 .description a {
   color: #003366;
   text-decoration: none;
 }
+.description a:hover { text-decoration: underline; }
 
-.description a:hover {
-  text-decoration: underline;
-}
-
-/* ====== News Section ====== */
+/* ===== News ===== */
 .news {
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
+  margin-top: 18px;
 }
 
 .news h2 {
-  text-align: left;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 0 0 12px 0;
   color: #222;
 }
 
@@ -115,32 +107,21 @@ hr {
   color: #003366;
 }
 
-/* ====== Footer ====== */
+/* ===== Footer ===== */
 footer {
   text-align: center;
   font-size: 13px;
   color: #555;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 36px 0 28px 0;
 }
 
-/* ====== Responsive tweaks ====== */
+/* ===== Responsive ===== */
 @media (max-width: 700px) {
   .intro-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .photo {
-    margin-bottom: 20px;
-  }
-
-  .profile-pic {
-    width: 150px;
-  }
-
-  .description {
-    width: 90%;
-  }
+  .photo { margin-bottom: 14px; }
+  .profile-pic { width: 132px; }   /* 移动端稍大，便于识别 */
 }
