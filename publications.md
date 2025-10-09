@@ -1,7 +1,3 @@
----
-layout: null
----
-
 ## Working Papers
 
 1. Reinforcement Learning in MDPs with Information-Ordered Policies 
