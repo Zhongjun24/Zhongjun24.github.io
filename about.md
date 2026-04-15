@@ -11,6 +11,6 @@ Please feel free to reach out if you share similar interests in learning and ope
 
 
 ## News
-
+- **Apr 2026:** New preprint of our paper "Offline-Online Reinforcement Learning for Linear Mixture MDPs" is now available on arXiv. [[arXiv](https://arxiv.org/abs/2604.11994)]
 - **Sept 2025:** Our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" was selected as a 2025 INFORMS Nicholson Finalist!  
 - **Aug 2025:** New preprint of our paper "Reinforcement Learning in MDPs with Information-Ordered Policies" is now available on arXiv. [[arXiv](https://arxiv.org/abs/2508.03904)]
