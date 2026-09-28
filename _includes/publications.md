@@ -5,5 +5,9 @@
    Major Revision, _Operations Research_ \
    **Finalist, 2025 INFORMS Nicholson Student Paper Competition**
 
-2. Offline-Online Reinforcement Learning for Linear Mixture MDPs [[arXiv](https://arxiv.org/abs/2604.11994)] \
-   Zhongjun Zhang and Sean R. Sinclair.
+
+## Publications
+
+1. Offline-Online Reinforcement Learning for Linear Mixture MDPs [[arXiv](https://arxiv.org/abs/2604.11994)] \
+   Zhongjun Zhang and Sean R. Sinclair. \
+   *NeurIPS 2026.*
