@@ -9,7 +9,7 @@ title: Zhongjun Zhang – Other
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ site.title | default: "Zhongjun Zhang" }}</title>
-  <link rel="stylesheet" href="assets/css/main.css?v=6" />
+  <link rel="stylesheet" href="assets/css/main.css?v=7" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@ title: Zhongjun Zhang – Other
     <nav class="nav-bar">
       <a href="index.html">Home</a> |
       <a href="publications.html">Publications</a> |
-      <a href="other.html">Other</a>
+      <a href="other.html" aria-current="page">Other</a>
     </nav>
   </header>
 
@@ -29,10 +29,32 @@ title: Zhongjun Zhang – Other
 
   <!-- ===== Main Content ===== -->
   <main>
-    <section class="placeholder">
-      <p style="text-align:center; color:#888; margin-top:80px;">
-  
+    <section class="travel-section" aria-labelledby="travel-heading">
+      <h2 id="travel-heading">Taking the scenic route</h2>
+      <p class="travel-intro">
+        I'm a road trip and travel fan with a soft spot for scenic detours.
+        My idea of a good itinerary includes a full tank, a good playlist,
+        and at least one &ldquo;let's see where this road goes.&rdquo;
+        The shortest route rarely wins.
       </p>
+      <div class="travel-gallery" aria-label="Travel photos">
+        {% for photo in site.data.travel %}
+        {% assign image_path = '/images/' | append: photo.image %}
+        {% assign travel_image = site.static_files | where: 'path', image_path | first %}
+        <figure class="travel-card">
+        {% if travel_image %}
+        <a class="travel-photo" href="{{ image_path | relative_url }}" aria-label="View travel photo {{ forloop.index }} in full size">
+          <img src="{{ image_path | relative_url }}" alt="Travel snapshot {{ forloop.index }} — {{ photo.location | escape }}" loading="lazy" decoding="async" width="800" height="600" />
+        </a>
+        {% else %}
+        <div class="travel-photo travel-photo-placeholder" aria-label="Travel photo {{ forloop.index }} coming soon">
+          <span>Photo {{ forloop.index | prepend: '0' }}</span>
+        </div>
+        {% endif %}
+          <figcaption lang="{{ photo.lang | default: 'en' }}">{{ photo.location | escape }}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
     </section>
   </main>
 

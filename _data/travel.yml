@@ -1,0 +1,28 @@
+# Photos are displayed in this order. Locations use local names where possible.
+- image: images_1.jpeg
+  location: "Colosseo · Roma, Italia"
+  lang: it
+- image: images_2.jpeg
+  location: "Tour Eiffel · Paris, France"
+  lang: fr
+- image: images_3.jpeg
+  location: "富士山 · 日本"
+  lang: ja
+- image: images_4.jpeg
+  location: "甘肃 · 中国"
+  lang: zh-CN
+- image: images_5.jpeg
+  location: "西藏 · 中国"
+  lang: zh-CN
+- image: images_6.jpeg
+  location: "Banff · Alberta, Canada"
+  lang: en
+- image: images_7.jpeg
+  location: "Arches · Utah, USA"
+  lang: en
+- image: images_8.jpeg
+  location: "Rainier · Washington, USA"
+  lang: en
+- image: images_9.jpeg
+  location: "Chicago · Illinois, USA"
+  lang: en
